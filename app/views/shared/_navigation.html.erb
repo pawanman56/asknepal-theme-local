@@ -1,0 +1,45 @@
+	<nav class="header-nav">
+		<div class="nav-wrapper">
+			<div class="container">
+				<%= link_to image_tag("logo.png", class: "brand-logo left"), root_path %>
+				<!-- <a href="#!" class="brand-logo">AskNepal</a> -->
+				
+				<div class="col s12 m3 right search">
+					<!-- <i class="material-icons">search</i> -->
+					<input type="search" class="search-box center-align" placeholder="search">
+				</div>
+
+		      	<!-- <div class="col s12 m3 right">
+		      		<form>
+				        <div class="input-field">
+							<input id="search" type="search" required>
+							<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+				        </div>
+			        </form>
+		      	</div> -->
+			</div>
+		</div>
+	</nav>
+	<nav class="navigation">
+	    <div class="nav-wrapper">
+	    	<div class="container">
+	    		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	    		<ul class="right">
+	    			<li><a href="#" class="right">Sign In or Sign Up</a></li>
+	    		</ul>
+		      	<ul id="nav-mobile" class="left hide-on-med-and-down">
+			    	<li><a href="#">Make a request</a></li>
+					<li><%= link_to 'Browse request',  requests_path %><!-- <a href="#">Browse request</a></li> -->
+					<li><a href="#">View authorities</a></li>
+					<li><%= link_to 'Help', helps_path %></li>
+			    </ul>
+			    <ul class="side-nav" id="mobile-demo">
+			        <li><a href="#">Make a request</a></li>
+					<li><%= link_to 'Browse request',  requests_path %></li>
+					<li><a href="#">View authorities</a></li>
+					<li><%= link_to 'Help', helps_path %></li>
+				</ul>
+	    	</div>
+	    </div>
+	</nav>

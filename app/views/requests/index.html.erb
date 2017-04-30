@@ -1,0 +1,255 @@
+<div id="wrapper">
+  <div id="content" role="main">
+
+    <div id="request_list" class="controller_request">
+      <div class="container width-80-per">
+        <div class="row">
+          <div id="header_left" class="col s12 m6 left">
+            <h2 class="center-align" style="color: black;">Browse and search requests</h2>
+
+            <div id="list-filter" class="list-filter">
+              <form accept-charset="UTF-8" action="/en/list/successful" id="filter_requests_form" method="get">
+                <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+                
+                <div class="row">
+                  <div class="list-filter-item col s12">
+                    <label class="form_label title" for="query">Keywords</label>
+                    <input id="query" name="query" type="text">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="list-filter-item col s12">
+                    <div class="container no-margin width-100-per">
+                      <label class="form_label title" for="query">Made between</label>
+                    </div>
+                    
+                    <div class="col s5 m5 no-padding">
+                      <input type="date" class="datepicker use-datepicker hasDatepicker">
+                      <!-- <input class="use-datepicker hasDatepicker" id="request_date_after" name="request_date_after" size="10" type="text" placeholder="From"> -->
+                    </div>
+
+                    <div class="col s2 m2 center-align">
+                      <label class="form_label" for="query">and</label>
+                    </div>
+
+                    <div class="col s5 m5 no-padding">
+                      <input type="date" class="datepicker use-datepicker hasDatepicker" id="request_date_before" name="request_date_before">
+                      <!-- <input class="use-datepicker hasDatepicker" id="request_date_before" name="request_date_before" size="10" type="text" placeholder="To"> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="list-filter-item col s12">
+                    <ul class="tabs">
+                      <li class="tab col s6 m3"><a href="#test1">all requests</a></li>
+                      <li class="tab col s6 m3"><a href="#test2">successful requests</a></li>
+                      <li class="tab col s6 m3"><a href="#test3">unsuccessful requests</a></li>
+                      <li class="tab col s6 m3"><a href="#test4">unresolved requests</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- <div class="list-filter-item">
+                  <div class="filter-request-types">
+                    <ul>
+                      <li>
+                        <a href="/en/list/all?#results">all requests</a>
+                      </li>
+                      <li>
+                        <span>successful requests</span>
+                      </li>
+                      <li>
+                        <a href="/en/list/unsuccessful?#results">unsuccessful requests</a>
+                      </li>
+                      <li>
+                        <a href="/en/list/awaiting?#results">unresolved requests</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+
+                <div class="list-filter-item submit-form-btn center-align">
+                  <input name="commit" type="submit" value="Search">
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+          <div id="header_right" class="col s12 m4 right">
+            <h2>Follow these requests</h2>
+
+            <div class="follow-req col s12">
+              <a href="/en/track/search/%20(latest_status:successful%20OR%20latest_status:partially_successful)" class="follow-btn-sm">Follow</a>
+              <span>|</span>
+              <a href="/en/feed/search/%20(latest_status:successful%20OR%20latest_status:partially_successful)" class="follow-btn-sm">RSS feed</a>
+            </div>
+
+            <!-- <div class="feed_link feed_link_main">
+              <a href="/en/track/search/%20(latest_status:successful%20OR%20latest_status:partially_successful)" class="link_button_green track-request-action">Follow</a>
+            </div>
+
+            <div class="feed_link feed_link_main">
+              <a href="/en/feed/search/%20(latest_status:successful%20OR%20latest_status:partially_successful)">RSS feed</a>
+            </div> -->
+
+          </div>
+        </div>
+        <div style="clear:both"></div>
+
+        <div class="row">
+          <div class="results_section">
+            <h2 class="foi_results">12 FOI requests found</h2>
+            <div class="results_block">
+
+              <div class="request_listing">
+                <div class="request_left col s12 m8 left">
+                  <span class="head">
+                    <a href="/en/request/budget_for_nepali_year_2073#incoming-18">Budget for Nepali year 2073</a>
+                  </span>
+
+                  <div class="requester">
+                    Response by 
+                    <a href="https://asknepal.info/en/body/c4n">Code for nepal</a> to <a href="https://asknepal.info/en/user/kavyaa">Kavyaa</a> on <time datetime="2016-06-24T05:08:12+05:45" title="2016-06-24 05:08:12 +0545">June 24, 2016</time>.
+                  </div>
+
+                  <span class="bottomline icon_partially_successful">
+                    <strong>
+                    Partially successful.
+                    </strong><br>
+                  </span>
+                </div>
+
+                <div class="request_right col s12 m4 right">
+                  <span class="desc">
+                    Dear Kavyaa,
+
+                    Thank you for your question. Code for Nepal budget for FY 2015 was less
+                    than $5000.
+
+                    --&nbsp; Code for Nepal Team.
+                  </span>
+                </div>
+              </div>
+
+              <div class="request_listing">
+                <div class="request_left col s12 m8 left">
+                  <span class="head">
+                    <a href="/en/request/number_of_male_and_female_securi#incoming-14">Number of male and female security officials (Nepal Police, Armed Police and Nepal Army) 1994-2014</a>
+                  </span>
+
+                  <div class="requester">
+                    Response by <a href="https://asknepal.info/en/body/mod">Ministry of Defense</a> to <a href="https://asknepal.info/en/user/shaileshwori_sharma">Shaileshwori Sharma</a> on <time datetime="2016-03-28T03:50:59+05:45" title="2016-03-28 03:50:59 +0545">March 28, 2016</time>.
+                  </div>
+
+                  <span class="bottomline icon_partially_successful">
+                    <strong>
+                    Partially successful.
+                    </strong><br>
+                  </span>
+                </div>
+
+                <div class="request_right col s12 m4 right">
+                  <span class="desc">
+                    Dear&nbsp; Shaileshwor,
+
+                    Ask Nepal volunteers looked up publicly available government data to at
+                    least partially respond to your question.
+
+                    &nbsp;
+
+                    +--------
+                  </span>
+                </div>
+              </div>
+
+              <div class="request_listing">
+                <div class="request_left col s12 m8 left">
+                  <span class="head">
+                    <a href="/en/request/rautes_of_western_nepal#incoming-13">"Rautes" of Western Nepal</a>
+                  </span>
+
+                  <div class="requester">
+                    Response by <a href="https://asknepal.info/en/body/mohp">Ministry of Health and Population</a> to <a href="https://asknepal.info/en/user/anuja_kc">Anuja KC</a> on <time datetime="2016-03-06T05:45:25+05:45" title="2016-03-06 05:45:25 +0545">March 06, 2016</time>.
+                  </div>
+
+                  <span class="bottomline icon_partially_successful">
+                    <strong>
+                    Partially successful.
+                    </strong><br>
+                  </span>
+                </div>
+
+                <div class="request_right col s12 m4 right">
+                  <span class="desc">
+                    Updated response:
+
+                    While Ministry of Health and Population has not offered in provision to
+                    facilitate the indigenous group, based on the news sources.
+                  </span>
+                </div>
+              </div>
+
+              <div class="request_listing">
+                <div class="request_left col s12 m8 left">
+                  <span class="head">
+                    <a href="/en/request/size_of_the_agro_based_food_indu#incoming-12">Size of the agro-based food industry in Nepal</a>
+                  </span>
+
+                  <div class="requester">
+                    Response by <a href="https://asknepal.info/en/body/moad">Ministry of Agriculture Development</a> to <a href="https://asknepal.info/en/user/anuja_kc">Anuja KC</a> on <time datetime="2016-03-06T05:43:27+05:45" title="2016-03-06 05:43:27 +0545">March 06, 2016</time>.
+                  </div>
+
+                  <span class="bottomline icon_partially_successful">
+                    <strong>
+                      Partially successful.
+                    </strong><br>
+                  </span>
+                </div>
+
+                <div class="request_right col s12 m4 right">
+                  <span class="desc">
+                    Correct response:
+
+                    There is an academic research done by Mahesh Bhattarai which can be
+                    accessed in this link [1]http://bit.ly/1Qew4LF. This has more...
+                  </span>
+                </div>
+              </div>
+
+              <div class="request_listing">
+                <div class="request_left col s12 m8 left">
+                  <span class="head">
+                    <a href="/en/request/workshop_on_prospect_of_sports_t#incoming-9">Workshop on “Prospect of Sports Tourism” in Nepal</a>
+                  </span>
+
+                  <div class="requester">
+                    Response by <a href="https://asknepal.info/en/body/motca">Ministry of Culture, Tourism and Civil Aviation</a> to <a href="https://asknepal.info/en/user/anuja_kc">Anuja KC</a> on <time datetime="2016-03-06T05:29:13+05:45" title="2016-03-06 05:29:13 +0545">March 06, 2016</time>.
+                  </div>
+
+                  <span class="bottomline icon_successful">
+                    <strong>
+                    Successful.
+                    </strong><br>
+                  </span>
+                </div>
+
+                <div class="request_right col s12 m4 right">
+                  <span class="desc">
+                    No Information was found regarding any worshops after 2006, for Prospects
+                    of Sports Tourism. However, there are links to the website that has
+                    informa...
+                  </span>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </div>
+</div>
