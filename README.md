@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the conceptual design for the site https://asknepal.info/en.
 
-Things you may want to cover:
+The basic changes made here are yet to be implemented.
 
-* Ruby version
+Extra gem used:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* gem 'materialize-sass'
