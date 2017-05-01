@@ -192,4 +192,16 @@ footer {
 	li.li-inline-block {
 		margin-right: 5px;
 	}
+
+	a:hover {
+		transition: .28s ease;
+		font-weight: 600;
+	}
+
+	.text-lighten-4 {
+		a:hover {
+			color: $light-grey;
+			font-weight: 600;
+		}
+	}
 }
